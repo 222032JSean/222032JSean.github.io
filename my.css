@@ -1,0 +1,61 @@
+body {background-image: url('img/background.png'); background-repeat: repeat-y;}
+
+#pagecontainer {font-size: 120%; color: orange;}
+
+#logo{display:flex; justify-content:center; align-items:center;}
+#menuList2{display:flex; justify-content:center; list-style: none; font-size: 150%;}
+#menuList2 li{margin: auto 1px;}
+#menuList{display:none;}
+
+.page{width:90%; height:100%; border:1px dotted orange; background:black; padding:5%; text-align:center;}
+#page0{width: 60%; margin: auto; background:none; border:none;}
+
+
+button{border:none; background:orange; font-size: 80%; padding: 10px;}
+
+
+#game{width: 400px; height: 600px; margin:auto; background: orange;}
+
+#rim{position:relative; bottom:40px; left:52px; z-index:4;}
+#ballGame{position: relative; top: 200px; right:72px; z-index:5;}
+#barMeter{width:500px; height:50px; background:grey; margin: auto;}
+#greenMeter{width:100px; height:50px; background:green; margin:auto;}
+#line{width:10px; height:50px; background:red; position:relative; bottom: 50px; left: 500px;}
+
+
+#shootBtn{display:none;}
+
+
+/*for responsive menu*/
+#hamIcon{display:none;}
+@media screen and (max-width:800px){
+	#hamIcon{display: block; position:fixed} /* unhide menu icon */
+	#menuList2{display:none;} /*hide the menu item list*/
+}
+
+@media screen and (min-width:800px){
+	#menuList li{display:none;}
+}
+
+
+
+#menuList.menuShow{
+	display:flex; /*!important*/
+	flex-direction: column;
+	text-align: center;
+	margin:auto;
+	list-style: none;
+	position:fixed;
+	top:40%;
+	
+	margin:auto;
+
+ 
+    	background-color: orange;
+    	padding: 5px;
+    	margin: 5px;
+
+
+}
+
+
